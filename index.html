@@ -34,6 +34,31 @@
 			height:270px;
 		}
 		
+		/* social btn*/
+		.quick-links {
+		  min-height: 30px;
+		  margin: 30px 0 0 0;
+		  padding: 5px 20px;
+		  list-style: none;
+		  text-align: center;
+		  overflow: hidden;
+		}
+		.quick-links:first-child {
+		  min-height: 0;
+		}
+		.quick-links li {
+		  display: inline;
+		  margin: 0 8px;
+		  color: #999;
+		}
+		.quick-links .github-btn,
+		.quick-links .tweet-btn,
+		.quick-links .follow-btn,
+		.quick-links .gplus-btn,
+		.quick-links .fb-btn {
+		  position: relative;
+		  top: 5px;
+		}
 		
 	</style>
 	<link rel="stylesheet" href="css/foundation-grid.css"/>
@@ -88,8 +113,41 @@
 			</div>
 		</div>
 	</div>
+	
+		<ul class="quick-links">
+		<li class="fb-btn">
+		<fb:like layout="button_count" send="false" href="http://takien.github.io/FlatBox/"></fb:like>
+		</li>
+		  <li class="follow-btn">
+			<a href="https://twitter.com/cektkp" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @cektkp</a>
+		  </li>
+		  <li class="tweet-btn">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://takien.github.io/FlatBox/" data-count="horizontal" data-via="cektkp" data-related="cektkp:Creator of FlatBox">Tweet</a>
+		  </li>
+		  <li class="gplus-btn">
+			<g:plusone url="http://takien.github.io/FlatBox/" size="medium"></g:plusone>
+		   </li>
+		</ul><!--quick-links-->
+		
 <!--fork me-->
 <a target="_blank" href="https://github.com/takien/FlatBox"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+<!--fb twit g+ btn-->
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=394280927787";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<!-- Place this render call where appropriate -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
 </body>
 
 </html>
