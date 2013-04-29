@@ -1,0 +1,93 @@
+<!--
+* FlatBox
+* @author: takien
+-->
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>FlatBox - Responsive metro layout</title>
+	
+	<style type="text/css">
+		.columns{
+			
+			-webkit-transition: 0.6s all linear; 
+			-moz-transition: 0.6s all linear; 
+			-o-transition: 0.6s all linear; 
+			transition: 0.6s all linear;
+		
+		}
+
+		.columns.box {
+			padding:5px;
+		}
+
+	
+		.box-wrap {
+			background:#669994;
+			min-height:130px;
+		}
+		.height-1 {
+			height:130px;
+		}
+		.height-2 {
+			height:270px;
+		}
+		
+		
+	</style>
+	<link rel="stylesheet" href="css/foundation-grid.css"/>
+</head>
+<body>
+	<div class="outer-wrap">
+		<div class="row">
+			<h1 class="metroslide-title">Welcome</h1>
+			<p class="metroslide-desc">Lorem ipsum dolor sit amet.</p>
+		</div>
+		<div class="box-outer-wrap row">
+			<div class="columns large-5">
+				<div class="row">
+					<div class="columns small-12 box">
+						<div class="box-wrap height-2">BIG 1</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="columns small-6 box"><div class="box-wrap">MID 1</div></div>
+					<div class="columns small-6 box"><div class="box-wrap">MID 2</div></div>
+				</div>
+			</div>
+			<div class="columns large-7">
+				<div class="row">
+					<div class="columns large-5">
+						<div class="row">
+							<div class="columns large-12 box">
+								<div class="box-wrap">A</div>
+								</div>
+							<div class="columns large-12 box">
+								<div class="box-wrap height-2">B</div>
+							</div>
+						</div>
+					</div>
+					<div class="columns large-7">
+						
+							<div class="row">
+								<div class="columns small-6 box"><div class="box-wrap">X</div></div>
+								<div class="columns small-6 box"><div class="box-wrap">Y</div></div>
+														
+														
+								<div class="columns small-6 box"><div class="box-wrap">X</div></div>
+								<div class="columns small-6 box"><div class="box-wrap">Y</div></div>
+														
+														
+								<div class="columns small-6 box"><div class="box-wrap">X</div></div>
+								<div class="columns small-6 box"><div class="box-wrap">Y</div></div>
+							</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
